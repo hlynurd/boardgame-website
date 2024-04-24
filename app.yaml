@@ -1,0 +1,9 @@
+runtime: python310  # Use Python 3.10
+entrypoint: gunicorn -b :8081 main:app
+
+env_variables:
+  GOOGLE_APPLICATION_CREDENTIALS: "firebase-key.json"
+
+handlers:
+- url: /.*
+  script: auto
