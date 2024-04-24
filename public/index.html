@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <title>Hello World with Firestore</title>
+    <!-- Add Firebase SDKs for Firebase products -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-compat-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-compat-firestore.js"></script> -->
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+    <form id="addGameForm">
+        <input type="text" id="gameName" placeholder="Game Name" required />
+        <input type="number" id="audunScore" placeholder="Auðun's Standing" />
+        <input type="number" id="arniScore" placeholder="Árni's Standing" />
+        <input type="number" id="hlynurScore" placeholder="Hlynur's Standing" />
+        <input type="number" id="kariScore" placeholder="Kári's Standing" />
+        <input type="number" id="skossiScore" placeholder="Skossi's Standing" />
+        <input type="number" id="saevarScore" placeholder="Sævar's Standing" />
+        <input type="number" id="ornScore" placeholder="Örn's Standing" />
+        <button type="submit">Add Game</button>
+    </form>
+    <div id="data">Loading data...</div>
+
+    <script src="/app.js" type="module"></script>
+</body>
+</html>
